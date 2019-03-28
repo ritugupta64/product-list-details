@@ -9,7 +9,7 @@ class ProductContainer extends Component {
 
       componentDidMount()
       {
-        axios.get("http://www.json-generator.com/api/json/get/cqUrIJOTLS?indent=2")
+        axios.get("https://jsonplaceholder.typicode.com/photos")
               .then(response => this.setState({
                 items:response.data
               }))
@@ -33,7 +33,6 @@ class ProductContainer extends Component {
           return(<Products key={item.id} 
                             url={item.url} 
                             title={item.title} 
-                            details={item.details} 
                             removeBox = {this.onRemove} />)
         })
 

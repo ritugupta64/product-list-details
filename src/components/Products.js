@@ -36,7 +36,7 @@ class Products extends Component {
 </h4>
 
           
-            <p style={{display:this.state.toggle?"block":"none"}}>{details}</p>
+            <p style={{display:this.state.toggle?"block":"none"}}>{title}</p>
         </div>
     </React.Fragment>
     )
