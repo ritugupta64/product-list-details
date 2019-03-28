@@ -1,0 +1,68 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@mixin borderRadius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+.App{
+    max-width: 960px;
+    width:100%;
+    margin: 0 auto;
+}
+
+.cross{
+    display: none;
+    position: absolute;
+    right:10%;
+    top:10%;
+    z-index: 999999;
+}
+.productName{
+
+    
+
+    img{
+        width:200px;
+    }
+
+    width:200px;
+    display: inline-block;
+    border:1px solid gray;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    @include borderRadius(5px);
+    padding:5px;
+    vertical-align: top;
+    position: relative;
+
+    h4{
+        font-size: 14px;
+       
+        margin:10px 0px;
+    }
+
+    p{
+        font-size: 12px;
+        line-height: 18px;
+        margin: 10px 0px;
+    }
+  &:hover .cross{
+      display: block;
+  }  
+
+}
+
+.productName:nth-child(4n+0){
+    margin-right: 0px;
+}
+
+
